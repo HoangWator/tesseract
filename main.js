@@ -1,5 +1,8 @@
 const T = require("tesseract.js")
 
-T.recognize('./elon_musk_vn.png', 'vie', {logger: e => console.log(e)})
+var txt;
+
+T.recognize('./book_text.jpg', 'vie')
     .then(out => console.log(out.data.text));
+
 
